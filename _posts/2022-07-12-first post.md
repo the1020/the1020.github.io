@@ -4,7 +4,6 @@ author: 예은
 date: 2022-07-12 15:29:00 +09:00
 categories: [jekyll]
 tags: [jekyll]
-pin: true
 ---
 
 ## ⛳️ 블로그 생성
@@ -16,7 +15,7 @@ pin: true
 [왕초보를 위한 Github 블로그 만들기](https://zeddios.tistory.com/1222)가 진짜 도움이 많이 되었고
 [Jekyll 공식 가이드](https://jekyllrb-ko.github.io/docs/)보면서 ruby 환경설정을 했다.
 
-![Jekyll](/assets/img/post/Jekyll.png)
+![Jekyll](/assets/img/post/first_post/Jekyll.png)
 
 ~~몇 초는 무슨.. 나는 세시간 걸렸다.~~
 
@@ -35,12 +34,12 @@ pin: true
 ### 🪄 Skipping: \_posts/2022-07-12-first post.md has a future date
 
 포맷에 맞춰서 글을 추가하고 브라우저에서 확인했는데 글이 안나왔다. 터미널에 이런 문구가 떴고
-![skippost](/assets/img/post/skippost.png)
+![skippost](/assets/img/post/first_post/skippost.png)
 
 찾아보니 한국 시간대에 맞춰서 작성해줘야 한다고 한다.
 `_config.yml`에서 `timezone: Asia/Seoul`으로 설정했으니 그에 맞게 UTC+09:00로 설정해주어야 하는거 같다.
 
-![setTimezone](/assets/img/post/setTimezone.png)
+![setTimezone](/assets/img/post/first_post/setTimezone.png)
 
 > 참고 [jekyll 에서 drafts 혹은 post가 인식되지 않을 때.](https://hurderella.tistory.com/128)
 
