@@ -34,8 +34,9 @@ endfor %} {% endif %}
 
     <div class="post-content">
       <p>
-        {% include no-linenos.html content=post.content %} {{ content |
-        markdownify | strip_html | truncate: 200 }}
+        {% if post.subtitle %} {{post.subtitle}} {% else %} {% include
+        no-linenos.html content=post.content %} {{ content | markdownify |
+        strip_html | truncate: 200 }} {% endif %}
       </p>
     </div>
 
