@@ -1705,3 +1705,149 @@ $sidebar-display: "sidebar-display";
     } /* .sidebar-bottom */
   } /* #sidebar */
 } /* min-width: 1650px */
+
+.progress-card-wrap {
+  display: table;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-card {
+  display: inline-block;
+  width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 0px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.expense-item {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.expense-item__description {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  flex: 1;
+  text-align: center;
+}
+
+.expense-item h2 {
+  color: #3a3a3a;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.expense-item__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #40005d;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+@media (min-width: 580px) {
+  .expense-item__description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .expense-item__description h2 {
+    font-size: 1.25rem;
+  }
+
+  .expense-item__price {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.expense-date {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: inline;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  display: inline-flex;
+  width: 340px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+
+.chip {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  margin: 0 10px;
+
+  cursor: pointer;
+}
+
+.chip.primary {
+  background: #33b5e5;
+  color: whitesmoke;
+}
+
+.chip.secondary {
+  background: #242933;
+  color: #777;
+}
+
+.chip.success {
+  background: #00c851;
+  color: whitesmoke;
+}
+
+.chip.warning {
+  background: #feb904;
+  color: whitesmoke;
+}
+.chip.danger {
+  background: #da605b;
+  color: whitesmoke;
+}
+
+.chip.info {
+  background: #5fd6d4;
+  color: whitesmoke;
+}
