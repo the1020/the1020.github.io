@@ -148,110 +148,15 @@
 }
 
 .tube .liquid .percentage::after,
-.tube .liquid .percentage::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 75px;
-  animation: liquid 4s infinite linear;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 0;
-  background: var(--tube-color);
-  transition: 1s;
-}
-
-.tube .liquid .percentage::after {
-  opacity: 0.4;
-  animation-direction: reverse;
-  border-radius: 60px;
-}
-
+.tube .liquid .percentage::before,
 .tube .liquid .percentage-4::after,
-.tube .liquid .percentage-4::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 75px;
-  animation: liquid 4s infinite linear;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 0;
-  background: var(--tube-color);
-  transition: 1s;
-}
-
-.tube .liquid .percentage-4::after {
-  opacity: 0.4;
-  animation-direction: reverse;
-  border-radius: 60px;
-}
-
+.tube .liquid .percentage-4::before,
 .tube .liquid .percentage-14::after,
-.tube .liquid .percentage-14::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 75px;
-  animation: liquid 4s infinite linear;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 0;
-  background: var(--tube-color);
-  transition: 1s;
-}
-
-.tube .liquid .percentage-14::after {
-  opacity: 0.4;
-  animation-direction: reverse;
-  border-radius: 60px;
-}
-
+.tube .liquid .percentage-14::before,
 .tube .liquid .percentage-20::after,
-.tube .liquid .percentage-20::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 75px;
-  animation: liquid 4s infinite linear;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 0;
-  background: var(--tube-color);
-  transition: 1s;
-}
-
-.tube .liquid .percentage-20::after {
-  opacity: 0.4;
-  animation-direction: reverse;
-  border-radius: 60px;
-}
-
+.tube .liquid .percentage-20::before,
 .tube .liquid .percentage-45::after,
-.tube .liquid .percentage-45::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 75px;
-  animation: liquid 4s infinite linear;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 0;
-  background: var(--tube-color);
-  transition: 1s;
-}
-
-.tube .liquid .percentage-45::after {
-  opacity: 0.4;
-  animation-direction: reverse;
-  border-radius: 60px;
-}
-
+.tube .liquid .percentage-45::before,
 .tube .liquid .percentage-55::after,
 .tube .liquid .percentage-55::before {
   position: absolute;
@@ -267,6 +172,11 @@
   transition: 1s;
 }
 
+.tube .liquid .percentage::after,
+.tube .liquid .percentage-4::after,
+.tube .liquid .percentage-14::after,
+.tube .liquid .percentage-20::after,
+.tube .liquid .percentage-45::after,
 .tube .liquid .percentage-55::after {
   opacity: 0.4;
   animation-direction: reverse;
