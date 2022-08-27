@@ -127,6 +127,16 @@
   transition: 1s;
 }
 
+.tube .liquid .percentage-35 {
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 80;
+  transition: 1s;
+}
+
 .tube .liquid .percentage-45 {
   position: absolute;
   height: 45%;
@@ -155,6 +165,8 @@
 .tube .liquid .percentage-14::before,
 .tube .liquid .percentage-20::after,
 .tube .liquid .percentage-20::before,
+.tube .liquid .percentage-35::after,
+.tube .liquid .percentage-35::before,
 .tube .liquid .percentage-45::after,
 .tube .liquid .percentage-45::before,
 .tube .liquid .percentage-55::after,
@@ -176,6 +188,7 @@
 .tube .liquid .percentage-4::after,
 .tube .liquid .percentage-14::after,
 .tube .liquid .percentage-20::after,
+.tube .liquid .percentage-35::after,
 .tube .liquid .percentage-45::after,
 .tube .liquid .percentage-55::after {
   opacity: 0.4;
@@ -264,12 +277,12 @@
   z-index: 10;
 }
 
-.tube .bubbles-14 {
+.tube .bubbles-20 {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: calc(14% + calc(100% - 14%));
+  height: calc(20% + calc(100% - 20%));
   z-index: 10;
 }
 
@@ -279,6 +292,15 @@
   bottom: 0;
   width: 100%;
   height: calc(20% + calc(100% - 20%));
+  z-index: 10;
+}
+
+.tube .bubbles-35 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(35% + calc(100% - 35%));
   z-index: 10;
 }
 
@@ -351,6 +373,20 @@
   height: 10px;
   opacity: 0.8;
   bottom: calc(20% / 3);
+  animation: bubble 3s infinite linear;
+  transform: scale(0.3) rotate(50deg);
+  transition: 1s;
+}
+
+.tube .bubbles-35 div {
+  position: absolute;
+  left: 30%;
+  border-radius: 50% 50% 0 50%;
+  background: var(--tube-color);
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  bottom: calc(35% / 3);
   animation: bubble 3s infinite linear;
   transform: scale(0.3) rotate(50deg);
   transition: 1s;
