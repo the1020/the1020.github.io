@@ -110,12 +110,15 @@ userName = userInput;
 함수 선언식은 함수를 기본으로 `void`로 추론하는 반면 함수 표현식은 `never`로 추론한다.
 
 - 아무런 타입도 명시하지 않은 함수 선언식
+
   ![use-function-declaration-without-never](/assets/img/post/TIL/20220923/use-function-declaration.png)
 
 - 아무런 타입도 명시하지 않은 함수 표현식
+
   ![use-function-expressions](/assets/img/post/TIL/20220923/use-function-expressions.png)
 
 - `never`를 명시한 함수 선언식
+
   ![use-function-declaration-with-never](/assets/img/post/TIL/20220923/use-function-declaration-with-never.png)
 
 > 🐝 참고
