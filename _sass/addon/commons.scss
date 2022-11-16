@@ -26,6 +26,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
@@ -670,7 +678,8 @@ $sidebar-display: "sidebar-display";
   width: $sidebar-width;
   z-index: 99;
   background: var(--sidebar-bg);
-
+  font-family: "RIDIBatang", "Pretendard-Regular", "Lato", "Microsoft Yahei",
+    sans-serif;
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
@@ -727,9 +736,9 @@ $sidebar-display: "sidebar-display";
   .site-title {
     a {
       @extend %clickable-transition;
-      font-family: "Pretendard-Regular";
+
       font-weight: 900;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       letter-spacing: 0.5px;
       color: rgba(134, 133, 133, 99%);
     }
