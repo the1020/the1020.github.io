@@ -1,0 +1,42 @@
+[
+  {
+    "title": "리액트 공식문서",
+    "tags": "리액트, 자바스크립트",
+    "url": "https://ko.reactjs.org/"
+  },
+  {
+    "title": "[ENG]✋🏼🔥 CS Visualized: CORS",
+    "tags": "CORS, 보안, HTTP",
+    "url": "https://dev.to/lydiahallie/cs-visualized-cors-5b8h"
+  },
+  {
+    "title": "[JavaScript] 런타임 작동 방식, 비동기와 이벤트 루프",
+    "tags": "자바스크립트, V8, 런타임, 스레드, 비동기",
+    "url": "https://hanamon.kr/javascript-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%99%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84/"
+  },
+  {
+    "title": "[ENG]TDD Changed My Life",
+    "tags": "TDD",
+    "url": "https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80"
+  },
+  {
+    "title": "Hide JavaScript Code",
+    "tags": "자바스크립트",
+    "url": "https://academind.com/tutorials/hide-javascript-code"
+  },
+  {
+    "title": "2ssue's dev note",
+    "tags": "인터뷰, 웹, 자바스크립트",
+    "url": "https://2ssue.github.io/common_questions_for_Web_Developer/"
+  },
+  {
+    "title": "TypeScript Deep Dive",
+    "tags": "타입스크립트",
+    "url": "https://radlohead.gitbook.io/typescript-deep-dive/"
+  },
+  {
+    "title": "TOAST UI",
+    "tags": "웹, 자바스크립트",
+    "url": "https://ui.toast.com/posts/ko"
+  }
+]

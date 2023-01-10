@@ -1,0 +1,90 @@
+---
+layout: page
+# All the Tags of Reference or Blog.
+---
+
+<div id="page-category">
+  <div id="tags" class="d-flex flex-wrap small"></div>
+  <hr />
+  <div id="reference-results"></div>
+</div>
+<script>
+  const resultTag = async (keyword = "") => {
+    const response = await fetch("/assets/js/data/reference.json");
+
+    if (response.status == 200) {
+      let json = await response.json();
+      if (keyword) {
+        json = json.filter((data) => data.tags.includes(keyword));
+      }
+      return json;
+    }
+
+    throw new Error(response.status);
+  };
+
+  const createTagList = (data) => {
+    const tags = new Set();
+    let tagElements = "";
+
+    data.forEach((ele) => {
+      ele.tags.split(",").forEach((tag) => {
+        tags.add(tag.trim());
+      });
+    });
+
+    for (let value of tags) {
+      tagElements += `<div><a class="tag" href="javascript:void(0)">#${value.trim()}</a></div>`;
+    }
+
+    document.getElementById("tags").innerHTML = tagElements;
+  };
+
+  const createReferenceList = (data) => {
+    let list = "";
+    data.forEach((ele) => {
+      let dataTag = "";
+
+      ele.tags.split(",").forEach((tag) => {
+        dataTag += `<div><a class="tag" href="javascript:void(0)">#${tag.trim()}</a></div>`;
+      });
+
+      list += `<div class="card mb-3" style="display:block">
+                  <a href="${ele.url}" target="_blank">
+                    <div class="card-body pl-3 pr-3 pt-3 pb-0">
+                      <h4 class="pt-0 mt-0 mb-1" data-toc-skip="">${ele.title}</h3>
+                      <div class="text-muted small"><p>${ele.url}</p></div>
+                    </div>
+                  </a>
+                  <div class="d-flex flex-wrap small pl-3 pr-3 pt-0 pb-3">${dataTag}</div>
+                </div>
+                `;
+    });
+
+    document.getElementById(
+      "reference-results"
+    ).innerHTML = `<div id="related-posts">
+                      ${list}
+                    </div>`;
+  };
+
+  (async () => {
+    let response = await resultTag();
+    createTagList(response);
+    createReferenceList(response);
+  })();
+
+  document
+    .getElementById("page-category")
+    .addEventListener("click", async (e) => {
+      console.log(e.target);
+      if (e.target.tagName !== "A") return;
+      if (e.target.className !== "tag") return;
+
+      const keyword = e.target.text.slice(1);
+      let response = await resultTag(keyword);
+
+      createReferenceList(response);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
